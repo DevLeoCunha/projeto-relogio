@@ -16,6 +16,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative; 
+    /* Para que após, os números fiquem delimitados com o relógio */
 }
 
 

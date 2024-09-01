@@ -26,6 +26,9 @@ main {
    border-radius: 600px;
    border: 10px solid black;
    position: relative; /* Para que após, os números fiquem delimitados com o tamanho do relógio */
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .number {
@@ -35,7 +38,7 @@ main {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 5px;
+  padding: 8px;
 }
  
 .number-1 {  /* Com o atributo transfom rotate é possivel posicionar cada numero com base no seu grau */
@@ -84,4 +87,14 @@ main {
 
 .number-12 {  /* Com o atributo transfom rotate é possivel posicionar cada numero com base no seu grau */
     transform: rotate(360deg);
+}
+
+.second-hand {
+    width: 5px;
+    height: 200px;
+    background-color: rgb(218, 1, 1);
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(0, -50%) rotate(50deg); /* Pegou 50% do ponteiro e deslocou para cima, eixo x = 0 não mexe e eixo y = 50% */
+    transform-origin: bottom center; /* Com isso é possível pôr a origem de onde o ponteiro vai se deslocar quando passar a girar */
 }

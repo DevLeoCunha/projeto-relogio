@@ -95,7 +95,7 @@ main {
     background-color: rgb(218, 1, 1);
     position: absolute;
     border-radius: 5px;
-    transform: translate(0, -50%) rotate(60deg); /* Pegou 50% do ponteiro e deslocou para cima, eixo x = 0 não mexe e eixo y = 50% */
+    transform: translate(0, -50%); /* Pegou 50% do ponteiro e deslocou para cima, eixo x = 0 não mexe e eixo y = 50% */
     transform-origin: bottom center; /* Com isso é possível pôr a origem de onde o ponteiro vai se deslocar quando passar a girar */
 }
 
@@ -105,12 +105,12 @@ main {
     background-color: rgb(0, 1, 40);
     position: absolute;
     border-radius: 5px;
-    transform: translate(0, -50%) rotate(90deg);/* Pegou 50% do ponteiro e deslocou para cima, eixo x = 0 não mexe e eixo y = 50% */
+    transform: translate(0, -50%);/* Pegou 50% do ponteiro e deslocou para cima, eixo x = 0 não mexe e eixo y = 50% */
     transform-origin: bottom center; /* Com isso é possível pôr a origem de onde o ponteiro vai se deslocar quando passar a girar */
 }
 
 .hour-hand {
-    width: 12px;
+    width: 13px;
     height: 150px;
     background-color: rgb(0, 1, 40);
     position: absolute;
@@ -123,5 +123,6 @@ main {
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
 }

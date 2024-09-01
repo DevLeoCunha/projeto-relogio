@@ -20,8 +20,8 @@ main {
 
 
 .clock {
-   width: 600px;
-   height: 600px;
+   min-width: 600px; /*Ao definir um valor minimo, sempre sera o mesmo independente do tamanho da tela.*/
+   min-height: 600px;
    background-color: white;
    border-radius: 600px;
    border: 10px solid black;

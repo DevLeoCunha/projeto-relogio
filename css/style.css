@@ -9,6 +9,7 @@
 body {
     background-image: linear-gradient(to top, #193256, #4c81cb, #e1dce9);
     min-height: 100vh;
+    text-align: center;
 }
 
 main {
